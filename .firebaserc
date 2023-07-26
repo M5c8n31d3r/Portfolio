@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ms-portfolio-acada": {
+      "hosting": {
+        "michael-schneider-portfolio": [
+          "ms-portfolio-acada"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ms-portfolio-acada"
+  }
+}

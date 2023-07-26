@@ -1,1 +1,62 @@
-/* You can add global styles to this file, and also import other style files */
+
+body {
+    margin: 0;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    background: #141d2f;
+    overflow-x: hidden;
+    &::-webkit-scrollbar {
+        width: 0 !important
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+h1 {
+    font-size: 6.5rem;
+    @media (max-width: "1300px") {
+        font-size: 5.5rem;
+    }
+    @media (max-width: "690px") {
+        font-size: 4.5rem;
+    }
+    @media (max-width: "430px") {
+        font-size: 3.5rem;
+    }
+}
+* {
+    // scrollbar-width: thin;
+    scrollbar-color: #00bee8 #141d2f;
+}
+
+button {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+
+/* Change autocomplete styles in WebKit */
+input:-webkit-autofill,
+select:-webkit-autofill:focus {
+  -webkit-text-fill-color: #ffffff;
+  -webkit-box-shadow: 0 0 0px 1000px #141d2f inset;
+  transition: background-color 5000s ease-in-out 0s;
+}
+@keyframes mymove {
+    20% {box-shadow:   8px 8px 8px #9747ff;}}

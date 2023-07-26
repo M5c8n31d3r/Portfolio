@@ -1,0 +1,9 @@
+{
+  "hosting": [
+    {
+      "target": "michael-schneider-portfolio",
+      "source": ".",
+      "frameworksBackend": {}
+    }
+  ]
+}

@@ -1,0 +1,190 @@
+
+section {
+    color: #ffffff;
+    position: relative;
+    @media (max-width: 390px) {
+        padding: 1rem 0 0 0;
+    }
+}
+
+.headline {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        position: relative;
+        width: fit-content;
+        margin-bottom: 0;
+        img {
+            position: absolute;
+        }
+        .long {
+            right: -32rem;
+            top: 50%;
+        }
+        .short {
+            left: -9rem;
+            top: 50%;
+        }
+    }
+    p {
+        margin: 1rem 2rem;
+        text-align: center;
+        @media (max-width: 390px) {
+            margin: 1rem;
+        }
+    }
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin: 0 7rem 0 7rem;
+    .img {
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        img {
+            width: 125%;
+            height: 100%;
+            @media (max-width: 1250px) {
+                width: 135%;
+            }
+            @media (max-width: 1150px) {
+                width: 155%;
+            }
+            @media (max-width: 1000px) {
+                width: 200%;
+            }
+            @media (max-width: 950px) {
+                width: 225%;
+            }
+        }
+        @media (max-width: 950px) {
+            width: 100%;
+        }
+    }
+    .text {
+        width: 50%;
+        margin: 0 0 0 6rem;
+        text-align: start;
+        h2 {
+            font-size: 2rem;
+            margin: 0.3rem 0;
+            color: #9747ff;
+        }
+        span {
+            font-size: 1.5rem;
+            color: #70e61c;
+        }
+        .buttons {
+            display: flex;
+            gap: 5rem;
+            .purpleButton,
+            .greenButton {
+                padding: 1rem 2rem;
+                color: #ffffff;
+                border-radius: 0.5rem;
+                font-size: 1.5rem;
+                @media (max-width: 390px) {
+                    font-size: 1rem;
+                }
+            }
+            .purpleButton {
+                background:#9747ff;
+                border: 0;
+                &:hover {
+                    background: #70e61c;
+                    color: #9747ff;
+                    cursor: pointer;
+                }
+            }
+            .greenButton {
+                background: transparent;
+                border: 2px solid #70e61c;
+                &:hover {
+                    background: #70e61c;
+                    color: #9747ff;
+                    cursor: pointer;
+                }
+            }
+            @media (max-width: 950px) {
+                justify-content: center;
+            }
+            @media (max-width: 650px) {
+                gap: 1rem;
+            }
+        }
+        @media (min-width: 1500px) {
+            margin: 0 0 0 10rem;
+        }
+        @media (max-width: 950px) {
+            margin: 0;
+            text-align: center;
+        }
+        @media (max-width: 950px) {
+            width: 100%;
+        }
+    }
+    @media (max-width: 950px) {
+        flex-direction: column;
+    }
+    @media (max-width: 650px) {
+        margin: 0 2rem 0 2rem;
+    }
+    @media (max-width: 390px) {
+        margin: 0 1rem 0 1rem;
+    }
+}
+
+.reverse {
+    flex-direction: row-reverse;
+    .text {
+        margin: 0 6rem 0 0;
+        text-align: end;
+        .buttons {
+            justify-content: end;
+            @media (max-width: 950px) {
+                justify-content: center;
+            }
+        }
+        @media (min-width: 1500px) {
+            margin: 0 10rem 0 0;
+        }
+        @media (max-width: 950px) {
+            margin: 0;
+            text-align: center;
+        }
+    }
+    @media (max-width: 950px) {
+        flex-direction: column;
+    }
+}
+
+.purpleShadow {
+    position: absolute;
+    top: 50rem;
+    z-index: -1;
+    @media (max-width: 1600px) {
+        top: 37rem;
+    }
+    @media (max-width: 950px) {
+        top: 89rem;
+        width: 24rem;
+    }
+}
+
+.greenShadow {
+    position: absolute;
+    right: 0;
+    bottom: -28rem;
+    z-index: -1;
+}
+
+.aos-animate {
+    z-index: 1;
+    position: relative;
+}

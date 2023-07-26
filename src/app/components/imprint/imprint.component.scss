@@ -1,0 +1,25 @@
+section {
+    margin: 10rem 2rem 2rem 2rem;
+    color: white;
+    a {
+        color: rgba(0, 174, 255, 1);
+    }
+    .close {
+        position: absolute;
+        right: 4rem;
+        width: 3rem;
+        top: 4rem;
+        &:hover {
+            cursor: pointer;
+            scale: 1.1;
+            background-color: crimson;
+            border-radius: 50%;
+        }
+    }
+    .headers {
+        font-size: 7vw;
+    }
+    .breakWord {
+        word-wrap: break-word;
+    }
+}
