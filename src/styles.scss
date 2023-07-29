@@ -4,15 +4,42 @@ body {
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
     background: #141d2f;
     overflow-x: hidden;
-    &::-webkit-scrollbar {
-        width: 0 !important
-    }
+    // &::-webkit-scrollbar {
+    //     width: 0 !important
+    // }
 }
+
+
+* {
+    ::-webkit-scrollbar {
+        width: 16px;
+      }
+    
+      /* Track */
+    ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 4px #7c7c7c; 
+    border-radius: 5px;
+    }
+    
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+    background: #9747ff; 
+    border-radius: 5px;
+    }
+    
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+    background: #70e61c; 
+    }
+    
+    }
+
 
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
 }
+
 
 h1 {
     font-size: 6.5rem;
@@ -26,14 +53,12 @@ h1 {
         font-size: 3.5rem;
     }
 }
-* {
-    // scrollbar-width: thin;
-    scrollbar-color: #00bee8 #141d2f;
-}
+
 
 button {
     font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
+
 
 .noselect {
     -webkit-touch-callout: none;
@@ -51,6 +76,7 @@ button {
                                   supported by Chrome, Edge, Opera and Firefox */
 }
 
+
 /* Change autocomplete styles in WebKit */
 input:-webkit-autofill,
 select:-webkit-autofill:focus {
@@ -58,5 +84,7 @@ select:-webkit-autofill:focus {
   -webkit-box-shadow: 0 0 0px 1000px #141d2f inset;
   transition: background-color 5000s ease-in-out 0s;
 }
+
+
 @keyframes mymove {
     20% {box-shadow:   8px 8px 8px #9747ff;}}

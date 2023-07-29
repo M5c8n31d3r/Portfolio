@@ -56,7 +56,7 @@ export class ContactComponent {
   }
 
   async sendMessage(){
-    await fetch('https://M5c8n31d3r@gmail.com/send_mail/send_mail.php',
+    await fetch('https://michael-schneider.developerakademie.net/send_mail.php',
       {
         method: 'POST',
         body: this.createMessage()
