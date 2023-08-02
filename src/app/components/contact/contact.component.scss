@@ -84,7 +84,7 @@ h1 {
                 margin: 0;
             }
             .message {
-                background-image:  url('/assets/img/icons/purpleStrokes.png');
+                background-image: url('/assets/img/icons/purpleStrokes.png');
                 background-position: calc(100% - 10px) calc(100% - 10px);
                 background-repeat: no-repeat;
             }
@@ -103,17 +103,17 @@ h1 {
                 }
                 &::placeholder {
                     /* Chrome, Firefox, Opera, Safari 10.1+ */
-                    color: white;
+                    color: #ffffff;
                     opacity: 1;
                     /* Firefox */
                 }
                 &:-ms-input-placeholder {
                     /* Internet Explorer 10-11 */
-                    color: white;
+                    color: #ffffff;
                 }
                 &::-ms-input-placeholder {
                     /* Microsoft Edge */
-                    color: white;
+                    color: #ffffff;
                 }
                 &:focus-visible {
                     outline: unset;
@@ -136,7 +136,7 @@ h1 {
                         background-position: calc(100% - 16px) 12px; 
                     }
                     &.message {
-                        background-image:  url('/assets/img/icons/purpleStrokes.png');
+                        background-image: url('/assets/img/icons/purpleStrokes.png');
                         background-position: calc(100% - 10px) calc(100% - 10px);
                         
                     }

@@ -135,9 +135,13 @@ section {
     .picture {
       opacity: 0;
       transition: opacity 125ms ease-in-out;
-      width: 45%;
+      // width: 45%;
+      width: 48%;
+      padding-left: 19rem;
+      margin-bottom: 13rem;
       @media (max-width: 1000px) {
         width: 100%;
+        // margin-bottom: 10rem;
       }
     }
     .loaded {
@@ -149,9 +153,12 @@ section {
   .shadow {
     position: absolute;
     z-index: -1;
-    left: -7%;
-    top: -1%;
-    width: 66%;
+    // left: -7%;
+    // top: -1%;
+    // width: 66%;
+    left: -16%;
+    top: 8%;
+    width: 80%;
     @media (max-width: 1000px) {
       left: -11%;
       top: -4%;
@@ -331,7 +338,7 @@ section {
 
   @media (min-height: 1200px) {
     @media (max-width: 1000px) {
-      bottom: -4%;
+      bottom: -6%;
     }
     @media (max-width: 750px) {
       bottom: 4%;
@@ -477,11 +484,12 @@ section {
   height: 100%;
 
   @media (max-width: 1000px) {
-    width: 140%;
+    // width: 140%;
+    width: 100%;    
     top: 46%;
 
     @media (min-height: 200px) and (max-height: 600px) {
-      top: 30%;
+      top: 50%;
     }
     @media (min-height: 600px) and (max-height: 800px) {
       top: 39%;
