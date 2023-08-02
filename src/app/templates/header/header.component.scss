@@ -25,8 +25,12 @@ header {
     .spaceLeft {
         margin: 0 0 0 0.75rem;
     }
+    .color-none{
+        right: 1rem;
+    }
     .purple {
         color: #9747ff;
+        margin-right: -15px;
     }
     
     @media (max-width:650px) {
