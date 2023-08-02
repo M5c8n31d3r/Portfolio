@@ -84,7 +84,7 @@ h1 {
                 margin: 0;
             }
             .message {
-                background-image: url('/assets/img/icons/purpleStrokes.png');
+                background-image: url('~src/assets/img/icons/purpleStrokes.png');
                 background-position: calc(100% - 10px) calc(100% - 10px);
                 background-repeat: no-repeat;
             }
@@ -124,19 +124,19 @@ h1 {
                     &.ng-invalid {
                         border: 1px solid #ff0000;
                         box-shadow: 0px 0px 16px #ff0000;
-                        background-image: url('/assets/img/icons/redError.png');
+                        background-image: url('~src/assets/img/icons/redError.png');
                         background-repeat: no-repeat;
                         background-position: calc(100% - 16px) 12px, calc(100% - 10px) calc(100% - 10px);
                     }
                     &.ng-valid {
                         border: 1px solid #70e61c;
                         box-shadow: 0px 0px 16px #70e61c;
-                        background-image: url('/assets/img/icons/greenCheck.png');
+                        background-image: url('~src/assets/img/icons/greenCheck.png');
                         background-repeat: no-repeat;
                         background-position: calc(100% - 16px) 12px; 
                     }
                     &.message {
-                        background-image: url('/assets/img/icons/purpleStrokes.png');
+                        background-image: url('~src/assets/img/icons/purpleStrokes.png');
                         background-position: calc(100% - 10px) calc(100% - 10px);
                         
                     }
