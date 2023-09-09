@@ -8,9 +8,9 @@ declare let AOS: any;
 export class PortfolioComponent {
 
 
-  // constructor() {
-  //   console.log(AOS); // loaded script
-  // }
+  constructor() {
+    
+  }
 
   ngOnInit() {
     AOS.init();
