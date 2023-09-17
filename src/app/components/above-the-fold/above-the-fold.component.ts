@@ -5,9 +5,11 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './above-the-fold.component.html',
   styleUrls: ['./above-the-fold.component.scss'],
 })
+
 export class AboveTheFoldComponent implements OnInit {
   blurredImage!: HTMLImageElement;
   blurLoad!: HTMLDivElement;
+
 
   ngOnInit(): void {
     this.blurredImage = document.getElementById(
@@ -24,6 +26,7 @@ export class AboveTheFoldComponent implements OnInit {
       });
     }
   }
+  
   loaded() {
     this.blurredImage.classList.add('loaded');
     setTimeout(() => {

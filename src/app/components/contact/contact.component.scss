@@ -38,6 +38,7 @@ h1 {
     justify-content: space-between;
     z-index: 1;
     position: relative;
+
     .left {
         margin: 0 0 0 7rem;
         width: 40%;
@@ -56,23 +57,24 @@ h1 {
         }
         @media (max-width: 850px) {
             margin: 0 7rem 0 7rem;
-            width: calc( 100% - 14rem);
+            width: calc(100% - 14rem);
             // margin: 0 4rem 0 4rem;
             // width: calc(100% - 8rem);
         }
         @media (max-height: 450px) and (max-width: 850px) {
             margin: 0 2rem 0 2rem;
-            width: calc( 100% - 4rem);
+            width: calc(100% - 4rem);
         }
         @media (max-width: 390px) {
             margin: 0 1rem 0 1rem;
             width: auto;
         }
     }
+
     .right {
         margin: 0.75rem 7rem 0 7rem;
         width: 40%;
-        
+
         form {
             position: relative;
             display: flex;
@@ -84,20 +86,20 @@ h1 {
                 margin: 0;
             }
             .message {
-                background-image: url('~src/assets/img/icons/purpleStrokes.png');
+                background-image: url("~src/assets/img/icons/purpleStrokes.png");
                 background-position: calc(100% - 10px) calc(100% - 10px);
                 background-repeat: no-repeat;
             }
             input,
             textarea {
-                font-family: 'Poppins', Arial, Helvetica, sans-serif;
+                font-family: "Poppins", Arial, Helvetica, sans-serif;
                 padding: 1rem 1.25rem;
                 border: 1px solid #9747ff;
                 box-shadow: 0px 0px 16px #9747ff;
                 border-radius: 0.5rem;
                 background: transparent;
                 color: #ffffff;
-                font-size: 1rem;       
+                font-size: 1rem;
                 &:hover {
                     border: 1px solid #70e61c;
                 }
@@ -124,21 +126,22 @@ h1 {
                     &.ng-invalid {
                         border: 1px solid #ff0000;
                         box-shadow: 0px 0px 16px #ff0000;
-                        background-image: url('~src/assets/img/icons/redError.png');
+                        background-image: url("~src/assets/img/icons/redError.png");
                         background-repeat: no-repeat;
-                        background-position: calc(100% - 16px) 12px, calc(100% - 10px) calc(100% - 10px);
+                        background-position:
+                            calc(100% - 16px) 12px,
+                            calc(100% - 10px) calc(100% - 10px);
                     }
                     &.ng-valid {
                         border: 1px solid #70e61c;
                         box-shadow: 0px 0px 16px #70e61c;
-                        background-image: url('~src/assets/img/icons/greenCheck.png');
+                        background-image: url("~src/assets/img/icons/greenCheck.png");
                         background-repeat: no-repeat;
-                        background-position: calc(100% - 16px) 12px; 
+                        background-position: calc(100% - 16px) 12px;
                     }
                     &.message {
-                        background-image: url('~src/assets/img/icons/purpleStrokes.png');
+                        background-image: url("~src/assets/img/icons/purpleStrokes.png");
                         background-position: calc(100% - 10px) calc(100% - 10px);
-                        
                     }
                 }
                 &:disabled {
@@ -165,7 +168,7 @@ h1 {
                 transition: all 125ms ease-in-out;
                 animation: mymove 3s infinite;
                 // box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
-                box-shadow: 0px 0px 16px #9747ff;
+                box-shadow: 0px 0px 16px #27222d;
                 &:enabled {
                     @media (hover: hover) and (pointer: fine) {
                         &:hover {
@@ -189,7 +192,7 @@ h1 {
         }
         @media (max-height: 450px) and (max-width: 850px) {
             margin: 0 2rem 0 2rem;
-            width: calc( 100% - 4rem);
+            width: calc(100% - 4rem);
         }
         @media (max-width: 390px) {
             margin: 0 1rem 0 1rem;
@@ -214,7 +217,6 @@ h1 {
         animation: _ngcontent-ng-c3605877662_jump 1.5s cubic-bezier(0.2, 0, 0.5, 0.9) alternate;
         // color: #70e61c !important;
         // background-image: url('/assets/img/icons/goUpButton2.png');
-        
     }
     @media (max-width: 650px) {
         right: 2rem;

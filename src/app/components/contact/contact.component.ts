@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import {FormControl, FormGroup, Validators} from '@angular/forms';
+import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ScrollToTopService } from 'src/servives/scroll-to-top.service';
 
 @Component({
@@ -8,6 +8,7 @@ import { ScrollToTopService } from 'src/servives/scroll-to-top.service';
   styleUrls: ['./contact.component.scss'],
   providers: [ScrollToTopService]
 })
+
 export class ContactComponent {
   @ViewChild('contact') contactSectionID!: ElementRef;
   @ViewChild('name') name!: ElementRef;
@@ -33,6 +34,7 @@ export class ContactComponent {
     ], []),
   })
 
+
   constructor(public ScrollToTopService: ScrollToTopService){}
 
 
@@ -42,6 +44,7 @@ export class ContactComponent {
     this.enableAndClearForm();
     this.mailSent = true;
   }
+
 
   disableForm(){
     let name = this.name.nativeElement;
@@ -55,16 +58,16 @@ export class ContactComponent {
     button.disabled = true;
   }
 
+
   async sendMessage(){
-    // await fetch('https://michael-schneider.developerakademie.net/send_mail.php',
-    // await fetch('https://michaelschneider-developer.de/send_mail.php',
-    await fetch('https://michaelschneider.dev/send_mail.php',
+    await fetch('https://michaelschneider.dev/send_mail/send_mail.php',
       {
         method: 'POST',
         body: this.createMessage()
       }
     )
   }
+
 
   createMessage(){
     let name = this.name.nativeElement;
@@ -79,6 +82,7 @@ export class ContactComponent {
 
     return fd;
   }
+
 
   enableAndClearForm(){
     let name = this.name.nativeElement;
