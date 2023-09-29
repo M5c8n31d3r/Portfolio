@@ -16,13 +16,13 @@ section {
 
 h1 {
     position: relative;
-    margin: 6rem 0 0 7rem;
+    margin: 6rem 0 0 6rem;
     .stroke {
         position: absolute;
-        left: -7rem;
+        left: -8rem;
         top: 50%;
         @media (max-width: 650px) {
-            left: -4rem;
+            left: -8rem;
         }
     }
     @media (max-height: 450px) and (max-width: 850px) {
@@ -40,7 +40,7 @@ h1 {
     position: relative;
 
     .left {
-        margin: 0 0 0 7rem;
+        margin: 8rem 0px 56px 7rem;
         width: 40%;
         h2 {
             font-size: 2rem;
@@ -50,16 +50,17 @@ h1 {
             }
             @media (max-width: 450px) {
                 font-size: 1.5rem;
+                margin-top: 1rem;
             }
             @media (max-width: 390px) {
                 font-size: 1.25rem;
             }
         }
         @media (max-width: 850px) {
-            margin: 0 7rem 0 7rem;
-            width: calc(100% - 14rem);
-            // margin: 0 4rem 0 4rem;
-            // width: calc(100% - 8rem);
+            // margin:16px -7rem 0 4rem;
+            // width: calc(100% - 14rem);
+            margin: 0 4rem 0 4rem;
+            width: calc(100% - 8rem);
         }
         @media (max-height: 450px) and (max-width: 850px) {
             margin: 0 2rem 0 2rem;

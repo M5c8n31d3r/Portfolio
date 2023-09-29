@@ -1,11 +1,11 @@
 <section id="contact" #contact>
   <div>
-    <h1 translate>
+    <h1 data-aos="fade-down-right" translate>
       Contact
-      <img loading="lazy" class="stroke" src="assets/img/icons/strokePurpleShort3.png" alt="StrokePurple" />
+      <img loading="lazy" class="stroke" src="assets/img/icons/strokePurpleShort2.png" alt="StrokePurple" />
     </h1>
     <div class="content">
-      <div class="left">
+      <div data-aos="fade-down-right" class="left">
         <h2 translate>Got a problem to solve?</h2>
         <p translate>
           Contact me using this form. I am very interested in hearing from you,
@@ -14,7 +14,8 @@
         <p translate>Need a Frontend developer? Contact me!</p>
       </div>
       <div class="right">
-        <form [formGroup]="contactForm" (submit)="sendMail()">
+        <form data-aos="fade-down-left" data-aos-anchor="#example-anchor" data-aos-offset="500" data-aos-duration="500"
+          [formGroup]="contactForm" (submit)="sendMail()">
           <p class="green" *ngIf="mailSent" translate>
             Message sent successfully
           </p>
