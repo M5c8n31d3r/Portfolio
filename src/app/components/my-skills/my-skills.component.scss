@@ -5,7 +5,7 @@ section {
     gap: 4rem;
     position: relative;
     justify-content: center;
-    min-height: 100svh;
+    // min-height: 100svh;
     @media (max-width: "1150px") {
         flex-direction: column-reverse;
         padding: 0 7rem 0 7rem;
